@@ -5,7 +5,15 @@
   "main": "server/server.js",
   "type": "module",
   "engines": {
-    "node": ">=16.0.0 <18"
+    "node": ">=16.18.0"
+  },
+  "scripts": {
+    "debug": "nodemon --inspect server/server.js",
+    "loadData": "node falconDB/loadData.js",
+    "server": "nodemon server/server.js",
+    "client": "cd client && npm start",
+    "dev": "concurrently \"npm run server\"  \"npm run client\"",
+    "package": "node manifest/makePackage.js"
   },
   "keywords": [],
   "author": "M365 cloud advocates",
