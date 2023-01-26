@@ -5,7 +5,7 @@
   "main": "server/server.js",
   "type": "module",
   "engines": {
-    "node": ">=18.12.1"
+    "node": ">=16.0.0"
   },
   "scripts": {
     "debug": "nodemon --inspect server/server.js",
